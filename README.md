@@ -1,11 +1,13 @@
-##蜡烛图数据
+分为四点：蜡烛图，x轴，柱状图，k线
+
+##蜡烛图
   ![image](https://github.com/user-attachments/assets/20cabb00-48be-4eb0-9ea7-b96bd49c012b)
 
   在series里定义，通过设置itemStyle改变颜色
 
   ![image](https://github.com/user-attachments/assets/7b935ca5-378c-4273-b40d-04de24018cf5)
 
-##x轴的值
+##x轴
   ![image](https://github.com/user-attachments/assets/46552a58-1ed6-446a-82ee-55b6f410b512)
 
   在xAxis里定义，第一组是蜡烛图的，第二组是柱状图的。
@@ -15,7 +17,7 @@
   ![image](https://github.com/user-attachments/assets/bd219d75-4022-47b7-939a-798f71b724ba)
 
 
-##柱状图数据
+##柱状图
   ![image](https://github.com/user-attachments/assets/bef47414-2ae9-43cc-9101-09263bdfb67f)
 
   在series里可以改变数据和颜色
