@@ -3,7 +3,10 @@
 ##蜡烛图
   ![image](https://github.com/user-attachments/assets/20cabb00-48be-4eb0-9ea7-b96bd49c012b)
 
-  在series里定义，通过设置itemStyle改变颜色
+  在series里定义，通过设置itemStyle改变颜色,data接收一个数组，数据结构为：
+  
+  ![image](https://github.com/user-attachments/assets/a38229fa-37c6-42b1-90a3-cf7e06b8b60c)
+
 
   ![image](https://github.com/user-attachments/assets/7b935ca5-378c-4273-b40d-04de24018cf5)
 
