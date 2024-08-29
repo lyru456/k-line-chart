@@ -1,8 +1,10 @@
 function initializeChart() {
 
+    //获取页面元素
     const chartDom = document.getElementsByClassName('container')[0] as HTMLElement;
-    const myChart = (window as any).echarts.init(chartDom);  // Cast `window` to `any` to access `echarts`
+    const myChart = (window as any).echarts.init(chartDom);
 
+    // 处理数据
     function splitData(rawData: any[]): { categoryData: string[], values: number[][], volumes: number[] } {
         const categoryData: string[] = [];
         const values: number[][] = [];
@@ -24,7 +26,6 @@ function initializeChart() {
             volumes: volumes
         };
     }
-
     const data0 = splitData([
         ['2013/1/24', 2320.26, 2320.26, 2287.3, 2362.94],
         ['2013/1/25', 2300, 2291.3, 2288.26, 2308.38],
@@ -116,6 +117,7 @@ function initializeChart() {
         ['2013/6/13', 2190.1, 2148.35, 2126.22, 2190.1]
     ]);
 
+    //配置颜色
     const upColor = '#000';
     const upBorderColor = '#00ff00';
     const downColor = '#fff';
@@ -194,7 +196,7 @@ function initializeChart() {
             }
         ],
         series: [
-            {
+            {//柱形图
                 name: 'Volume',
                 type: 'bar',
                 xAxisIndex: 1,
@@ -210,7 +212,7 @@ function initializeChart() {
                 },
                 data: data0.volumes
             },
-            {
+            {//蜡烛图
                 name: '日K',
                 type: 'candlestick',
                 data: data0.values,

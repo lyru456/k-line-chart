@@ -1,7 +1,9 @@
 "use strict";
 function initializeChart() {
+    //获取页面元素
     const chartDom = document.getElementsByClassName('container')[0];
-    const myChart = window.echarts.init(chartDom); // Cast `window` to `any` to access `echarts`
+    const myChart = window.echarts.init(chartDom);
+    // 处理数据
     function splitData(rawData) {
         const categoryData = [];
         const values = [];
@@ -110,6 +112,7 @@ function initializeChart() {
         ['2013/6/7', 2242.26, 2210.9, 2205.07, 2250.63],
         ['2013/6/13', 2190.1, 2148.35, 2126.22, 2190.1]
     ]);
+    //配置颜色
     const upColor = '#000';
     const upBorderColor = '#00ff00';
     const downColor = '#fff';
